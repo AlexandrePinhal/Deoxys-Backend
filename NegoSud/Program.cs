@@ -23,6 +23,7 @@ builder.Services.AddAutoMapper(typeof(UserMapping).Assembly);
 builder.Services.AddAutoMapper(typeof(ProductMapping).Assembly);
 builder.Services.AddAutoMapper(typeof(FournisseurMapping).Assembly);
 builder.Services.AddAutoMapper(typeof(FamilyMapping).Assembly);
+builder.Services.AddAutoMapper(typeof(OrderMapping).Assembly);
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddControllers();

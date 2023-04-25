@@ -23,9 +23,12 @@ namespace NegoSud.Config
 
             services.AddScoped<IFournisseurService, FournisseurService>();
             services.AddScoped<IRepository<Fournisseur>, FournisseurRepository>();
-            
+
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IRepository<Product>, ProductRepository>();
+
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IRepository<Order>, OrderRepository>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<NegoSudDBContext>();
